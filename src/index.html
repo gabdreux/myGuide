@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    <header>
+        <img class="logo" src="imgs/logoMyGuide.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Front-end</a></li>
+                <li><a href="#">Back-end</a></li>
+                <li><a href="#">Architecture</a></li>
+                <li><a href="#">Scrum</a></li>      
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>Contact</button></a>
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+        
+    </header>
+
+
+    <div id="mobile_menu" class="overlay">
+        <a onclick="closeNav()" class="close">&times;</a>
+        <div class="overlay_content">
+            <a href="#">Home</a>
+            <a href="#">Front-end</a>
+            <a href="#">Back-end</a>
+            <a href="#">Architecture</a>
+            <a href="#">Scrum</a>
+        </div>
+    </div>
+
+
+
+
+
+<section class="containerHome">
+    <div class="topSpace">
+        <h1 id="h1Home">Welcome to my coding manual :)</h1>
+        <h2 title="Hover the elements to interact">You can find the main methods and concepts of HTML, CSS, JS, APIs, Microsservices,<br> Full stack architecture and Scrum.</h2>
+        <p title="This is a paragraph - p>. To put tags inside text use:">Through this project I want to make my knowledge about the above topics organized and accessible. Interact with elements on this page to get extra informations.<br> Click on it, hover or drag to generate an interaction.</p>
+    </div>
+    <div class="sideNav">
+        <details class="detailsList">
+            <summary>
+                <a href="#">
+                    <span class="icon"><ion-icon name="logo-css3"></ion-icon></span>
+                    <span class="text">CSS</span>
+                </a>
+            </summary>
+            <p>Mais infos aquis</p>
+        </details>
+        <details class="detailsList">
+            <summary>
+                <a href="#">
+                    <span class="icon"><ion-icon name="logo-html5"></ion-icon></span>
+                    <span class="text">HTML</span>
+                </a>
+            </summary>
+        </details>
+        <details class="detailsList">
+            <summary>
+                <a href="#">
+                    <span class="icon"><ion-icon name="logo-nodejs"></ion-icon></span>
+                    <span class="text">JS</span>
+                </a>
+            </summary>
+        </details>
+        <details class="detailsList">
+            <summary>
+                <a href="#">
+                    <span class="icon"><ion-icon name="git-network-outline"></ion-icon></span>
+                    <span class="text">API</span>
+                </a>
+            </summary>
+        </details class="detailsList">
+        <details class="detailsList">
+            <summary>
+                <a href="#">
+                    <span class="icon"><ion-icon name="rocket-outline"></ion-icon></span>
+                    <span class="text">SCRUM</span>
+                </a>
+            </summary>
+        </details>
+
+    </div>
+    <div class="itemContainer"><a href="#">Front-end</a></div>
+    <div class="itemContainer"><a href="#">Back-end</a></div>
+    <div class="itemContainer"><a href="#">Architecture</a></div>
+    <div class="itemContainer"><a href="#">Scrum</a></div>
+    <div class="footer"></div>
+</section>
+
+<br>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script type="text/javascript" src="functions.js"></script>
+</body>
+</html>
